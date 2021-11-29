@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bday Challenge</title>
+</head>
+
+<body>
+    <h1>Candice's Birthday Treasure Hunt</h1>
+
+    <div id="riddle"> 
+        <img src="/Pic/RBR.jpg" alt="RedBlackRed" width="150" >
+    </div>
+    <input type="text" id="answer" name="answer"><br><br>
+    <button onclick="myFunction()">Submit</button>
+    <div id="pass"></div>
+
+<script>
+   function pass() {
+        if (document.getElementById("pass").innerHTML === "") {
+            document.getElementById("pass").innerHTML+="<a href='2. HappyPark.html'><button>NEXT</button></a>";
+            alert("Wow!! You got the correct answer!");
+            } else {
+             alert("Please move to next page");
+            }}
+            
+    function myFunction(){
+    var a = document.getElementById("answer");
+    if (a.value == "2021070920211201") {
+        pass();
+        } else if (a.value == "hint117") {
+        alert("Read the name of the colour out")
+        }
+        else {
+        alert("Not really....try again!")
+        }}
+</script>
+
+</body>
+</html>

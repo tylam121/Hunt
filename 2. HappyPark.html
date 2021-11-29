@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Birthday Challenge</title>
+</head>
+
+<body>
+    <h1>Candice's Birthday Treasure Hunt</h1>
+
+    <p id="question">22.283330, 114.138142</p>
+    <input type="text" id="answer" name="answer" placeholder="Please enter two English words"><br><br>
+    <button onclick="myFunction()">Submit</button>
+    <div id="pass"></div>
+
+<script>
+    function myFunction(){
+        var a = document.getElementById("answer");
+        if (a.value == "happy park" || a.value == "Happy Park" || a.value == "Happy park") {
+            pass();
+            } else {
+            alert("Not really....try again!")
+            }}
+    
+    function pass() {
+        if (document.getElementById("pass").innerHTML === "") {
+            document.getElementById("pass").innerHTML+="<a href='3. Books.html'><button>NEXT</button></a>";
+            alert("Wow!! You got the correct answer!");
+            } 
+            else if (a.value == "hing129") {
+            alert("have you tried google?")
+            }
+            else {
+             alert("Please move to next page");
+            }}
+            
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bday Challenge</title>
+</head>
+
+<body>
+    <h1>Candice's Birthday Treasure Hunt</h1>
+
+    <div id="riddle"> 
+        <p>Yes, it's Frozen!! Let it go~ Let it go~</p>
+        <img src="/Pic/Frozen.jpeg" alt="Pic of Frozen" width="250" >
+        <p>So...where is the Key?</p>
+    </div>
+    <input type="text" id="answer" name="answer" placeholder="Open the box to look for the answer"><br><br>
+    <button onclick="myFunction()">Submit</button>
+    <div id="pass"></div>
+
+<script>
+   function pass() {
+        if (document.getElementById("pass").innerHTML === "") {
+            document.getElementById("pass").innerHTML+="<a href='Final.html'><button>Claim Your Prize!</button></a>";
+            alert("Wow!! You got the correct answer!");
+            } else {
+             alert("Please move to next page");
+            }}
+            
+    function myFunction(){
+    var a = document.getElementById("answer");
+    if (a.value == "bingo"||a.value == "Bingo") {
+        pass();
+        } else if (a.value == "hint561") {
+        alert("Now read the text above out loud")
+        }
+        else {
+        alert("Not really....try again!")
+        }}
+</script>
+
+</body>
+</html>
